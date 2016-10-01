@@ -1,0 +1,11 @@
+/**
+ * Icons
+ */
+
+
+
+.loading {
+  @extend .fa;
+  @extend .fa-circle-o-notch;
+  @extend .fa-spin;
+}

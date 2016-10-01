@@ -2,9 +2,12 @@
   "name": "life",
   "version": "0.0.1",
   "description": "Management of digital things",
-  "main": "server/index.js",
+  "main": "electron.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "election ./",
+    "styles": "node-sass --source-map compressed app/styles/main.scss > app/styles/main.css",
+    "watch-styles": "watch -p \"app/styles/**/*.scss\" -c \"npm run styles\""
   },
   "repository": {
     "type": "git",
@@ -16,10 +19,11 @@
     "url": "https://github.com/zzolo/life/issues"
   },
   "homepage": "https://github.com/zzolo/life",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-    
+    "bootstrap": "^4.0.0-alpha.4",
+    "electron-reload": "^1.0.2",
+    "font-awesome": "^4.6.3",
+    "watch-cli": "^0.2.1"
   }
 }

@@ -1,0 +1,26 @@
+/**
+ * Main SASS file.
+ */
+
+// Fonts
+@import "fonts.scss";
+
+// Override Bootsrap variables
+$body-bg: #202020;
+$body-color: #FFFFFF;
+$link-color: #F39C12;
+$font-family-sans-serif: raleway, "Helvetica Neue", Arial, sans-serif;
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap-flex.scss";
+
+// Import font awesome
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// Parts
+@import "mixins.scss";
+@import "helpers.scss";
+@import "animations.scss";
+@import "icons.scss";
+@import "layout.scss";

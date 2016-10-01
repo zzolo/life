@@ -1,0 +1,15 @@
+/**
+ * Helper classes
+ */
+
+// Block center vertical
+.vertical-block-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-block {
+  margin-left: auto;
+  margin-right: auto;
+}
