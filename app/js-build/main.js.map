@@ -1,0 +1,1 @@
+{"version":3,"sources":["../js/main.js"],"names":[],"mappings":";;AAIA","file":"main.js","sourcesContent":["/**\n * Main JS file.\n */\n\nimport React from 'react';\n"]}
