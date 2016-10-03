@@ -1,0 +1,38 @@
+/**
+ * Navigation.
+ */
+
+$nav-bg: #484848;
+
+nav.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: $nav-bg;
+  font-size: 1.25em;
+  z-index: 1000;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: inline-block;
+      padding: 0.5em 1em;
+      color: $body-color;
+
+      &:hover, &.active {
+        background-color: lighten($nav-bg, 10);
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const electron = require('electron');
 
 // Module to control application life.
@@ -27,8 +28,11 @@ function createWindow() {
     height: 600
   });
 
+  // Add extensions
+  //BrowserWindow.addDevToolsExtension(path.join(__dirname, './extensions/react-devtools/0.15.4_0'));
+
   // Maximize
-  mainWindow.maximize()
+  mainWindow.maximize();
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/app/index.html`);
