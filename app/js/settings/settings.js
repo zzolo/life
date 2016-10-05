@@ -1,15 +1,13 @@
 /**
- * Settings.
+ * Settings controller
  */
-import React from 'react';
 
-// Settings
-class Settings extends React.Component {
-  render() {
-    return (
-      <div>Settings</div>
-    )
-  }
-}
+import Config from 'electron-config';
+const config = new Config();
 
-export default Settings;
+// Add some methods
+config.loaded = function() {
+  return this.store && this.get('path');
+}.bind(config);
+
+export default config;

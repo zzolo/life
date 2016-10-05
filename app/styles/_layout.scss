@@ -6,13 +6,13 @@
   padding-left: 4em;
 }
 
-.welcome {
+.center-box-container {
   @extend .vertical-block-container;
   position: absolute;
   width: 100%;
   height: 100%;
 
-  .welcome-box {
+  .center-box {
     @extend .horizontal-block;
 
     width: 50%;

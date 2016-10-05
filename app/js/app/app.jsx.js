@@ -2,7 +2,7 @@
  * Main application container.
  */
 import React from 'react';
-import Navigation from '../navigation/navigation.js';
+import Navigation from '../navigation/navigation.jsx.js';
 
 // App
 class App extends React.Component {

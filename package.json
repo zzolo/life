@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/zzolo/life",
   "dependencies": {
+    "electron-config": "^0.2.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1"

@@ -4,45 +4,22 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _electronConfig = require('electron-config');
 
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
+var _electronConfig2 = _interopRequireDefault(_electronConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var config = new _electronConfig2.default();
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+// Add some methods
+/**
+ * Settings controller
+ */
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Settings.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+config.loaded = function () {
+  return this.store && this.get('path');
+}.bind(config);
 
-
-// Settings
-var Settings = function (_React$Component) {
-  _inherits(Settings, _React$Component);
-
-  function Settings() {
-    _classCallCheck(this, Settings);
-
-    return _possibleConstructorReturn(this, (Settings.__proto__ || Object.getPrototypeOf(Settings)).apply(this, arguments));
-  }
-
-  _createClass(Settings, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        'Settings'
-      );
-    }
-  }]);
-
-  return Settings;
-}(_react2.default.Component);
-
-exports.default = Settings;
+exports.default = config;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2pzL3NldHRpbmdzL3NldHRpbmdzLmpzIl0sIm5hbWVzIjpbImNvbmZpZyIsImxvYWRlZCIsInN0b3JlIiwiZ2V0IiwiYmluZCJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBSUE7Ozs7OztBQUNBLElBQU1BLFNBQVMsOEJBQWY7O0FBRUE7QUFQQTs7OztBQVFBQSxPQUFPQyxNQUFQLEdBQWdCLFlBQVc7QUFDekIsU0FBTyxLQUFLQyxLQUFMLElBQWMsS0FBS0MsR0FBTCxDQUFTLE1BQVQsQ0FBckI7QUFDRCxDQUZlLENBRWRDLElBRmMsQ0FFVEosTUFGUyxDQUFoQjs7a0JBSWVBLE0iLCJmaWxlIjoic2V0dGluZ3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFNldHRpbmdzIGNvbnRyb2xsZXJcbiAqL1xuXG5pbXBvcnQgQ29uZmlnIGZyb20gJ2VsZWN0cm9uLWNvbmZpZyc7XG5jb25zdCBjb25maWcgPSBuZXcgQ29uZmlnKCk7XG5cbi8vIEFkZCBzb21lIG1ldGhvZHNcbmNvbmZpZy5sb2FkZWQgPSBmdW5jdGlvbigpIHtcbiAgcmV0dXJuIHRoaXMuc3RvcmUgJiYgdGhpcy5nZXQoJ3BhdGgnKTtcbn0uYmluZChjb25maWcpO1xuXG5leHBvcnQgZGVmYXVsdCBjb25maWc7XG4iXX0=

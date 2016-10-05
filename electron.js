@@ -29,7 +29,7 @@ function createWindow() {
   });
 
   // Add extensions
-  //BrowserWindow.addDevToolsExtension(path.join(__dirname, './extensions/react-devtools/0.15.4_0'));
+  BrowserWindow.addDevToolsExtension(path.join(__dirname, './extensions/react-devtools/0.15.4_0'));
 
   // Maximize
   mainWindow.maximize();

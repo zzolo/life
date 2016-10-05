@@ -7,8 +7,8 @@ import React from 'react';
 class Welcome extends React.Component {
   render() {
     return (
-      <div class="welcome">
-        <div class="welcome-box">
+      <div class="center-box-container">
+        <div class="center-box">
           <h1>Life</h1>
           <p><span class="loading"></span></p>
         </div>
